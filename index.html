@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Survey Form</title>
-</head>
+  </head>
 
-<body>
-<div class="container">
-    <header class="header">
+  <body>
+    <div class="container">
+      <header class="header">
         <h1 id="title" class="text-center">
-            This is my Survey Form html and css project
+          This is my Survey Form html and css project
         </h1>
         <p>
-            Thank you taking the time 
-            to help me improve on my 
-            skills and platform
+          Thank you taking the time to help me improve on my skills and platform
         </p>
-    </header>
-</div>
-</body>
-
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name"
+            >Name:
+            <input
+              id="name"
+              type="text"
+              required
+              placeholder="Enter your name"
+              value="Jeffrey"
+            />
+          </label>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email"
+            >E-mail:
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+              value="odhiambo149@gmail.com"
+          /></label>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age:
+            <input
+              type="number"
+              id="number"
+              min="10"
+              max="99"
+              optional
+              placeholder="Enter your age"
+              value="29"
+            />
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
