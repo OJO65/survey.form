@@ -1,24 +1,23 @@
-
-
 body {
-  font-family: 'Times New Roman', Times, serif;
+  background-size: contain;
+  background-repeat: repeat;
+  background-color: aquamarine;
+  font-family: "Times New Roman", Times, serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.4;
   margin: 0;
 }
 
-
-
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   font-style: inherit;
   font-weight: 400;
   line-height: 1.2;
 }
 
 p {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   font-size: 1.25;
   text-align: center;
@@ -28,15 +27,28 @@ p {
 h1,
 p {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#name-label, #email-label, #number-label {
+  align-items: baseline;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#name, #email, #number {
+  background: rgba(195, 191, 214, 0.4);
+}
+
+#dropdown {
+  background: rgba(189, 164, 164, 0.4);
 }
 
 label {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   display: flex;
   align-items: center;
-  font-size: 1.125rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 0;
 }
 
 input,
@@ -44,47 +56,43 @@ button,
 select,
 textarea {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: inherit;
   line-height: inherit;
 }
 
 button {
-  border: black;
+  border: rgb(131, 69, 69);
 }
 
 .container {
   width: 60%;
-  margin: 3.125rem auto 0 auto;
+  margin: 3em auto 0 auto;
 }
 
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
+    padding: 0.12rem;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+    padding: 0.12rem;
   }
 }
 
 .header {
-  padding: 0 0.625rem;
+  padding: 0 0.6rem;
   margin-bottom: 1.875rem;
-}
-
-.description {
-  font-style: italic;
-  font-weight: 200;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
 .clue {
   margin-left: 0.1;
   font-size: 0.9rem;
-  color: #495057;
+  color: #15063b;
 }
 
 .text-center {
@@ -92,14 +100,14 @@ button {
 }
 
 form {
-  background: #80bdff;
+  background: rgba(195, 191, 214, 0.4);
   padding: 2.5rem 0.625rem;
   border-radius: 0.25rem;
 }
 
 @media (min-width: 480px) {
   form {
-    padding: 2.5rem;
+    padding: 0;
   }
 }
 
@@ -110,14 +118,14 @@ form {
 }
 
 .form-control {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 60%;
   height: 2.375rem;
   padding: 0.375rem 0.75rem;
-  color: #495057;
-  background-color: #fff;
+  color: #000;
+  background-color: rgba(104, 100, 121, 0.4);
   background-clip: padding-box;
-  border: 1px solid #3b2f2e;
+  border: 1px solid #696988;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
@@ -125,29 +133,30 @@ form {
 .form-control:focus {
   border-color: #80bdff;
   outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(80, 81, 124, 0.4);
 }
 
 .input-radio,
 .input-checkbox {
   display: inline-block;
-  margin-right: 0.625rem;
-  min-height: 1.25rem;
-  min-width: 1.25rem;
+  margin-right: 0.4rem;
+  min-height: 1rem;
+  min-width: 1rem;
 }
 
 .input-textarea {
+  background: rgba(189, 164, 164, 0.4);
   min-height: 120px;
-  width: 100%;
-  padding: 0.625rem;
+  width: 60%;
+  padding: 0.6rem;
   resize: vertical;
 }
 
 .submit-button {
-  display: block;
-  width: 100%;
+  display: inline-block;
+  width: 20%;
   padding: 0.75rem;
-  background:#cccfd3;
+  background: rgba(156, 140, 140, 0.4);
   color: inherit;
   border-radius: 2px;
   cursor: pointer;
